@@ -1,0 +1,12 @@
+.box {
+  @include box(0);
+  margin-bottom: 1.5rem;
+}
+
+.box-image {
+  border-bottom: 2px solid $text-color;
+}
+
+.box-content {
+  padding: 0.5rem;
+}

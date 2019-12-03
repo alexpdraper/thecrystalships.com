@@ -1,107 +1,15 @@
-.page-header {
-  padding: 1rem 2rem;
-  max-width: 100%;
-  width: 500px;
-  margin-right: auto;
-  margin-left: auto;
-  @media screen and (min-width: $breakpoint-md) {
-    width: 950px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-.footer {
-  padding: 1rem;
-  margin-bottom: 2rem;
-  max-width: 100%;
-  width: 500px;
-  margin-right: auto;
-  margin-left: auto;
-  @media screen and (min-width: $breakpoint-md) {
-    width: 950px;
-  }
-  & > p {
-    border: 2px solid #333;
-    box-shadow: 0.5rem 0.5rem #333;
-    padding: 1rem;
-    background-image: $background-gradient;
-  }
-}
-
-.nav-list {
-  list-style: none;
-  margin-top: 1rem;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  box-shadow: 0.5rem 0.5rem #333;
-  & > li {
-    display: block;
-    width: 100%;
-    flex: 0 0 100%;
-    &:not(:last-child) > a {
-      border-bottom-width: 0;
-    }
-    & > a {
-      display: block;
-      padding: 0.5rem;
-      color: #333;
-      border: 2px solid #333;
-      text-decoration: none;
-      &:hover {
-        background-color: #dbdbdb;
-      }
-    }
-  }
-
-  @media screen and (min-width: $breakpoint-md) {
-    margin-top: 0;
-    flex-wrap: nowrap;
-    box-shadow: none;
-    & > li {
-      width: auto;
-      flex-basis: auto;
-      margin-left: 1rem;
-      a {
-        transition: box-shadow 0.2s ease;
-      }
-      &.active a,
-      a:hover {
-        background-color: transparent;
-        box-shadow: 5px 5px $main-color;
-      }
-      &:nth-child(even) {
-        &.active a,
-        a:hover {
-          box-shadow: 5px 5px #e68ef8;
-        }
-      }
-      &:not(:last-child) > a {
-        border-bottom-width: 2px;
-      }
-    }
-  }
-}
-
 .page-layout {
   &.default {
+    @include content;
     display: flex;
     flex-wrap: wrap;
-    max-width: 100%;
     padding: 1rem;
-    width: 500px;
-    margin-right: auto;
-    margin-left: auto;
     .main,
     .sidebar {
       padding: 1rem;
       width: 100%;
     }
     @media screen and (min-width: $breakpoint-md) {
-      width: 950px;
       flex-wrap: nowrap;
 
       .main {
@@ -109,46 +17,9 @@
       }
 
       .sidebar {
-        flex: 0 0 350px;
-        max-width: 350px;
+        flex: 0 0 325px;
+        max-width: 325px;
       }
     }
   }
-}
-
-.box {
-  border: 2px solid #333;
-  box-shadow: 0.5rem 0.5rem #333;
-  margin-bottom: 1.5rem;
-}
-
-.box-image {
-  border-bottom: 2px solid #333;
-}
-
-.box-content {
-  padding: 0.5rem;
-}
-
-.track-listing {
-  border: 2px solid #333;
-  box-shadow: 0.25rem 0.25rem #333;
-}
-
-.track-listing summary {
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.track-listing .lyrics {
-  border-top: 1px solid #333;
-}
-
-.track-listing .lyrics p + p {
-  margin-top: 1rem;
-}
-
-.track-listing summary,
-.track-listing .lyrics {
-  padding: 0.5rem;
 }

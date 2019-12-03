@@ -1,0 +1,22 @@
+.track-listing {
+  @include box(0, 0.25rem);
+}
+
+.track-listing summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.track-listing .lyrics {
+  border-top: 1px solid $text-color;
+  background-color: white;
+}
+
+.track-listing .lyrics p + p {
+  margin-top: 1rem;
+}
+
+.track-listing summary,
+.track-listing .lyrics {
+  padding: 0.5rem;
+}

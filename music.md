@@ -14,7 +14,7 @@ active_page: music
 <div class="box">
   <div class="box-content">
     <iframe style="border: 0; width: 100%; height: 472px;"
-      src="https://bandcamp.com/EmbeddedPlayer/album=2889781778/size=large/bgcol=ffffff/linkcol=ffb74d/artwork=none/transparent=true/"
+      src="https://bandcamp.com/EmbeddedPlayer/album=2889781778/size=large/bgcol=ffffff/linkcol=63b2cc/artwork=none/transparent=true/"
       seamless>
       <a href="http://thecrystalships.bandcamp.com/album/the-tide">The Tide by The Crystal Ships</a>
     </iframe>

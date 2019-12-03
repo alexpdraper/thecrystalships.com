@@ -1,0 +1,22 @@
+<header class="page-header">
+  <div class="tcs-title-box">
+    <a class="tcs-title" href="/">
+      <div class="tcs-title-text">The Crystal Ships</div>
+    </a>
+    <div class="tcs-title-box-background"></div>
+  </div>
+
+  <nav>
+    <ul class="nav-list">
+      <li{% if page.active_page == 'home' %} class="active" {% endif %}>
+        <a href="/">Home</a>
+      </li>
+      <li{% if page.active_page == 'music' %} class="active" {% endif %}>
+        <a href="/music">Music</a>
+      </li>
+      <li{% if page.active_page == 'video' %} class="active" {% endif %}>
+        <a href="/video">Video</a>
+      </li>
+    </ul>
+  </nav>
+</header>

@@ -4,23 +4,7 @@
   {% include head.html %}
 </head>
 <body>
-  <header class="page-header">
-    <div class="tcs-title-box">
-      <a class="tcs-title" href="/"><div class="tcs-title-text">The Crystal Ships</div></a>
-      <div class="tcs-title-box-background"></div>
-    </div>
-
-    <nav>
-      <ul class="nav-list">
-        <li{% if page.active_page == 'home' %} class="active" {% endif %}>
-          <a href="/">Home</a>
-        </li>
-        <li{% if page.active_page == 'music' %} class="active" {% endif %}>
-          <a href="/music">Music</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  {% include header.html %}
 
   <div class="page-layout default">
     <main class="main">
@@ -29,30 +13,11 @@
       </article>
     </main>
 
-    <aside class="sidebar">
-      <div class="box">
-        <div class="box-image">
-          <img src="/assets/images/tide-album-art.jpg">
-        </div>
-        <div class="box-content">
-          <iframe style="border: 0; width: 100%; height: 120px; display: block;"
-            src="https://bandcamp.com/EmbeddedPlayer/album=2889781778/size=large/bgcol=ffffff/linkcol=ffb74d/tracklist=false/artwork=none/transparent=true/"
-            seamless>
-            <a href="http://thecrystalships.bandcamp.com/album/the-tide">The Tide by The Crystal Ships</a>
-          </iframe>
-        </div>
-      </div>
-    </aside>
+    {% unless page.hide_sidebar %}
+      {% include sidebar.html %}
+    {% endunless %}
   </div>
 
-  <footer class="footer">
-    <p>
-      © The Crystal Ships ·
-      <a href="https://www.facebook.com/thecrystalshipsband" target="_blank">Facebook</a> ·
-      <a href="https://thecrystalships.bandcamp.com/" target="_blank">Bandcamp</a> ·
-      <a href="https://twitter.com/thecrystalships" target="_blank">Twitter</a> ·
-      <a href="https://www.youtube.com/thecrystalshipsband" target="_blank">YouTube</a>
-    </p>
-  </footer>
+  {% include footer.html %}
 </body>
 </html>
