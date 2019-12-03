@@ -102,7 +102,6 @@
   transform: translate3d(0.5rem, 0.5rem, 0);
   z-index: 5;
   .tcs-title:hover + & {
-    opacity: 0.6;
-    background-color: $main-color;
+    transform: translate3d(0, 0, 0) rotateZ(10deg) scale(0.9);
   }
 }
