@@ -1,22 +1,13 @@
 // Colours
 $main-color: #058ed9;
 $text-color: #333;
+$background-gradient: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
 
 // Breakpoints
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
-
-// Layout
-$wrapper-width: 600px;
-$wrapper-width-lg: 768px;
-$content-width: 600px;
-$sidebar-width: ($wrapper-width-lg - $content-width);
-
-// Links
-$link-shadow: inset 0px -2px transparentize($main-color, 0.5);
-$link-shadow-hover: inset 0px -2px transparentize($main-color, 0);
 
 // Fonts
 $system-fonts: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

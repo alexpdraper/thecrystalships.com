@@ -14,18 +14,20 @@
 }
 
 .footer {
-  padding: 1rem 2rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
   max-width: 100%;
   width: 500px;
   margin-right: auto;
   margin-left: auto;
   @media screen and (min-width: $breakpoint-md) {
-    border-top: 2px solid #333;
     width: 950px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
+  }
+  & > p {
+    border: 2px solid #333;
+    box-shadow: 0.5rem 0.5rem #333;
+    padding: 1rem;
+    background-image: $background-gradient;
   }
 }
 
@@ -71,6 +73,12 @@
         background-color: transparent;
         box-shadow: 5px 5px $main-color;
       }
+      &:nth-child(even) {
+        &.active a,
+        a:hover {
+          box-shadow: 5px 5px #e68ef8;
+        }
+      }
       &:not(:last-child) > a {
         border-bottom-width: 2px;
       }
@@ -111,7 +119,6 @@
 .box {
   border: 2px solid #333;
   box-shadow: 0.5rem 0.5rem #333;
-  background-color: #fff;
   margin-bottom: 1.5rem;
 }
 
