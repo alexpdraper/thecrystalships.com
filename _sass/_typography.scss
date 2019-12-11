@@ -59,7 +59,7 @@ footer {
 
 // Blockquotes
 blockquote {
-  @include box(0.5rem);
+  @include box(0.75rem);
   margin-bottom: 1.5rem;
 
   & > * + * {
@@ -72,6 +72,14 @@ blockquote {
     &::before {
       content: "— ";
     }
+  }
+
+  & > p:first-child::before {
+    content: "“";
+    margin-left: -0.5em;
+  }
+  & > p:last-of-type::after {
+    content: "”";
   }
 }
 
