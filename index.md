@@ -16,7 +16,7 @@ active_page: home
 ## About The Crystal Ships
 
 >Tegan and Sara move…over! New twin set on the Canadian music scene! Though these guys would be more fitting for fans of the Decemberists, Death Cab for Cutie and the Postal Service.
-> <footer>Grant Lawrence in <a href="http://music.cbc.ca/#!/blogs/2014/4/Searchlight-2014-Grant-Lawrences-standout-artists-from-all-24-semi-final-regions" target="_blank"><cite title="Grant Lawrence’s standout artists from all 24 semi-final regions">Grant Lawrence’s standout artists from all 24 semi-final regions</cite></a></footer>
+> <footer>Grant Lawrence in <cite title="Grant Lawrence’s standout artists from all 24 semi-final regions">Grant Lawrence’s standout artists from all 24 semi-final regions</cite></footer>
 
 The Crystal Ships consists of Alex and Zak Draper: twin brothers with a penchant for experimenting with the pop genre. Their catchy hooks, poignant lyrics, and unique songwriting have led to recognition from media organizations and the public. The band was featured on Shaw’s Go! Vancouver TV, which aired three times in Vancouver. They were named regional finalists in the 2014 CBC Searchlight competition, despite being one of the newest bands in their region. As part of the competition the first single by The Crystal Ships, "The Tide," was played twice on the radio, once with an interview by the band.
 
