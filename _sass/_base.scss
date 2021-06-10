@@ -1,3 +1,26 @@
+:root {
+  --bg-gradient: #{$background-gradient};
+  --text-color: #{$text-color};
+  --text-color-light: #777;
+  --body-bg: #f8f9fa;
+  --lyrics-bg: var(--body-bg);
+  --border-color: #{$border-color};
+  --main-color: #{$main-color};
+  --secondary-color: #{$secondary-color};
+  --tertiary-color: #{$tertiary-color};
+  --radius: #{$radius};
+}
+
+.dark-mode {
+  --night-sky: linear-gradient(15deg, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+  --bg-gradient: var(--night-sky);
+  --body-bg: #0f2140;
+  --text-color: #fff;
+  --text-color-light: #bbb;
+  --border-color: #000;
+  --lyrics-bg: transparent;
+}
+
 *,
 *::before,
 *::after {

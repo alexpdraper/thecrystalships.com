@@ -8,8 +8,12 @@
 }
 
 .track-listing .lyrics {
-  border-top: 1px solid $text-color;
+  border-top: 1px solid $border-color;
+  border-top-color: var(--border-color);
   background-color: white;
+  background: var(--lyrics-bg);
+  border-bottom-right-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
 }
 
 .track-listing .lyrics p + p {

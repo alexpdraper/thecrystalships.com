@@ -4,6 +4,20 @@
   {% include head.html %}
 </head>
 <body>
+  <script>
+    ;(function () {
+      var theme = window.localStorage.getItem('theme');
+
+      if (!theme) {
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        theme = prefersDark ? 'dark' : 'light';
+      }
+
+      if (theme === 'dark') {
+        document.documentElement.className = 'dark-mode';
+      }
+    })();
+  </script>
   {% include header.html %}
 
   <div class="page-layout default">

@@ -1,3 +1,27 @@
+<button class="theme-switcher" id="theme-switcher"></button>
+
+<script>
+  (function () {
+    var themeSwitcher = document.getElementById('theme-switcher');
+
+    function setThemeText() {
+      var darkMode = document.documentElement.className === 'dark-mode';
+      themeSwitcher.textContent = darkMode ? '🌙' : '☀️';
+      var otherTheme = darkMode ? 'light' : 'dark';
+      themeSwitcher.setAttribute('title', 'Switch to ' + otherTheme + ' theme');
+    }
+
+    setThemeText();
+
+    themeSwitcher.addEventListener('click', function() {
+      var darkMode = document.documentElement.className === 'dark-mode';
+      document.documentElement.className = darkMode ? '' : 'dark-mode';
+      setThemeText();
+      window.localStorage.setItem('theme', darkMode ? 'light' : 'dark');
+    });
+  })()
+</script>
+
 <header class="page-header">
   <div class="tcs-title-box">
     <a class="tcs-title" href="/">

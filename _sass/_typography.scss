@@ -18,8 +18,10 @@ body {
   font-family: $body-font;
   font-size: 1rem;
   color: $text-color;
+  color: var(--text-color);
   line-height: 1.35;
-  background-image: linear-gradient(to top, #f8f9fa 0%, white 100%);
+  background: #f8f9fa;
+  background: var(--body-bg);
 }
 
 article {
@@ -68,6 +70,7 @@ blockquote {
 
   & > footer {
     color: #777;
+    color: var(--text-color-light);
     font-size: 80%;
     &::before {
       content: "— ";

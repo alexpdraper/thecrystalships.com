@@ -1,0 +1,15 @@
+.theme-switcher {
+  @include box;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.theme-switcher:hover {
+  cursor: pointer;
+}
